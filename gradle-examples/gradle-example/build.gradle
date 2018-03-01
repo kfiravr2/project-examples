@@ -108,7 +108,7 @@ artifactory {
         all 'org.jfrog.*:*:1.*:*@jar*', key3: 'val3', key4: 'val4'
       }
       publishPom = true // Publish generated POM files to Artifactory (true by default)
-      publishIvy = true // Publish generated Ivy descriptor files to Artifactory (true by default)
+      publishIvy = false // Publish generated Ivy descriptor files to Artifactory (true by default)
     }
   }
   resolve {
