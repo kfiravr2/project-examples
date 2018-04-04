@@ -21,3 +21,4 @@ node {
     // Publish build info.
     server.publishBuildInfo buildInfo
 }
+somestuff
