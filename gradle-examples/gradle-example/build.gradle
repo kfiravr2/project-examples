@@ -18,7 +18,7 @@ buildscript {
   repositories {
    // jcenter()
    maven {
-        url "http://localhost:8081/artifactory/jcenter"
+        url "http://localhost:8081/artifactory/gradle-addon"
     dependencies {
       classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
     }
