@@ -18,9 +18,10 @@ buildscript {
   repositories {
    // jcenter()
    maven {
-        url "http://localhost:8081/artifactory/gradle-addon"
+        url "http://kfira1.jfrog.io/kfira1/jcenter/gradle-addon"
     dependencies {
       classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
+    //  classpath 'com.android.tools.build:gradle:3.5.3'
     }
   }
 }
@@ -37,7 +38,7 @@ allprojects {
   status = 'Integration'
   repositories {
   	maven {
-        url "http://localhost:8081/artifactory/jcenter" // The Artifactory (preferably virtual) repository to resolve from
+        url "http://kfira1.jfrog.io/kfira1/jcenter" // The Artifactory (preferably virtual) repository to resolve from
         credentials {
             username "${artifactory_user}"
             password "${artifactory_password}"
